@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="hub" fetch="ssh://git@github.com" review="ssh://git@github.com" />
+    <remote name="osc" fetch="ssh://git@git.oschina.net" review="ssh://git@git.oschina.net" />
+
+    <default revision="master" remote="hub" sync-j="1" />
+
+    <project path="framework" name="sevsb/obsession">
+        <copyfile src="index.php" dest="index.php" />
+        <copyfile src="ajax.php" dest="ajax.php" />
+    </project>
+    <project path="vendor" name="sevsb/vendor" />
+
+    <project path="invoicing" remote="osc" name="leedoo/invoicing" />
+</manifest>
+
